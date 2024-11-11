@@ -5,6 +5,11 @@ import js from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import eslintConfigPrettier from 'eslint-config-prettier'
 
+
+/* eslintのGUI : 
+  npx eslint --inspect-config
+*/
+
 const config = [
   {
     files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
