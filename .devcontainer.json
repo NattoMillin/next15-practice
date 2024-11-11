@@ -16,14 +16,17 @@
         "dsznajder.es7-react-js-snippets",
         "foxundermoon.next-js",
         "PulkitGangwar.nextjs-snippets",
-        "bradlc.vscode-tailwindcss"
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode"
       ],
       "settings": {
         "editor.fontFamily": "'Source Han Code JP'",
         "terminal.integrated.fontFamily": "'Source Han Code JP'",
         "editor.formatOnSave": true,
         "editor.formatOnPaste": true,
-        "workbench.iconTheme": "vscode-icons"
+        "workbench.iconTheme": "vscode-icons",
+        
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
       }
     }
   },
