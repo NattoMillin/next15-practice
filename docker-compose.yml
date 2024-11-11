@@ -1,0 +1,21 @@
+# docker-composeのバージョンを指定
+version: "3.9"
+
+services:
+  frontend:
+    container_name: frontend
+    user: node:node
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - ./application:/home/node/dev
+    ports:
+      - 3000:3000
+    networks:
+      - applicationNetwork
+
+networks:
+  applicationNetwork:
+    driver: bridge

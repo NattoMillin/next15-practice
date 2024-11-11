@@ -1,0 +1,31 @@
+{
+  "name": "NextJS Container",
+  "dockerComposeFile": "./docker-compose.yml",
+  "workspaceFolder": "/home/node/dev",
+  "service": "frontend",
+  "runServices": [
+    "frontend"
+  ],
+  // リモート先のVS Codeにインストールする拡張機能
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscode-icons-team.vscode-icons",
+        "formulahendry.auto-rename-tag",
+        "Formulahendry.auto-close-tag",
+        "dsznajder.es7-react-js-snippets",
+        "foxundermoon.next-js",
+        "PulkitGangwar.nextjs-snippets",
+        "bradlc.vscode-tailwindcss"
+      ],
+      "settings": {
+        "editor.fontFamily": "'Source Han Code JP'",
+        "terminal.integrated.fontFamily": "'Source Han Code JP'",
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "workbench.iconTheme": "vscode-icons"
+      }
+    }
+  },
+  "shutdownAction": "stopCompose"
+}
